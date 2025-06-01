@@ -1,0 +1,13 @@
+
+
+.post {
+    container: post / inline-size;
+    .inner {
+        display: flex;
+        flex-direction: column;
+
+        @container main-content (width > 50ch) {
+            flex-direction: row;
+        }
+    }
+}
